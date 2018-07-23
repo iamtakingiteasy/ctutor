@@ -28,5 +28,4 @@ linked_node_t* linked_list_insert(linked_node_t *head, value_t value);
 // remove given node, fix broken chain if any, do not de-allocate given node
 int linked_list_remove(linked_node_t *head);
 
-void linked_list_tests();
 #endif

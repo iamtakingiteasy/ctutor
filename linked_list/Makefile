@@ -2,9 +2,9 @@
 
 all: clean linked_list_example
 
-CFLAGS = -I../linked_list
+CFLAGS = -I../common -I.
 
-SRCS = $(wildcard *c)
+SRCS = $(wildcard *.c ../common/*.c) ${REFSRC}
 
 OBJS = $(patsubst %.c, %.o, $(SRCS))
 
@@ -16,4 +16,3 @@ clean:
 
 test: linked_list_example
 	valgrind ./linked_list_example
-

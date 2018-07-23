@@ -1,6 +1,8 @@
 #include "linked_list.h"
 
-//#include "../reference/linked_list/impl.c"
+void linked_list_tests();
+
+// Put your implementation here
 
 int main(int argc, char **argv) {
     linked_list_tests();
